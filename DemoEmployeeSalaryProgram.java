@@ -20,7 +20,7 @@ public class DemoEmployeeSalaryProgram{
             // output file
             PrintWriter outFile = new PrintWriter(new FileWriter("employeeData.txt"));
 
-            //Declare the variables
+            //declare all variables
             String inputData = null;
             String empName = "";//employee name
             double empSalary = 0.00;//employee salary
@@ -36,7 +36,7 @@ public class DemoEmployeeSalaryProgram{
             double latestEmpAnnSalary = 0.00;//latest employee salary
             int latestEmpWorkYear = 0;//latest employee working year
             
-            //The title header
+            //the title header
             outFile.println("====================================================================");
             outFile.println("|                          List of Employee                        |");
             outFile.println("====================================================================");
@@ -84,7 +84,7 @@ public class DemoEmployeeSalaryProgram{
             //display top performing employee
             JOptionPane.showMessageDialog(null,"=================== Top Performing Employee Detalis ===================\n"+ topEmpData);
             
-            //Latest performing employee detalis
+            //latest performing employee detalis
             outFile.println("\n=================== Detalis  of Employee with the least years of service ===================");
             String latestEmpData = "Employee Name: "+latestEmpName+"\nAnnual Salary: RM "+dF.format(latestEmpAnnSalary)+"\nYears of Working: "+latestEmpWorkYear+" years";
             outFile.println(latestEmpData);
